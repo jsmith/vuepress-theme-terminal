@@ -1,16 +1,16 @@
 {
-  "name": "portfolio",
+  "name": "vuepress-theme-terminal",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "lint": "vue-cli-service lint",
     "dev": "vuepress dev demo",
     "build": "vuepress build demo",
-    "deploy": "npm run build && git add . && git commit -m 'deploy' && git push",
-    "publish": "npm publish"
+    "deploy": "npm run build && git add . && git commit -m 'deploy' && git push"
   },
   "dependencies": {
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "@jsmith21/vue-terminal": "^0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0",
@@ -21,7 +21,8 @@
     "stylus-loader": "^3.0.2",
     "vue-cli-plugin-vuepress": "^0.1.0",
     "vue-template-compiler": "^2.5.17",
-    "vuepress": "^0.14.2"
+    "vuepress": "^0.14.2",
+    "vuepress-theme-terminal": "^0.1"
   }
 }
 
