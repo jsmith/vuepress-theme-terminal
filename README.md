@@ -1,15 +1,15 @@
 # vuepress-theme-terminal
 > A terminal theme for VuePress!
 
-[Demo](https://jacsmith21.github.io/vuepress-theme-terminal)
-[My Portfolio](https://jacsmith21.github.io)
+- [Demo](https://jacsmith21.github.io/vuepress-theme-terminal)
+- [My Portfolio](https://jacsmith21.github.io)
 
 ## Usage
 See the `demo/` folder for a working example!
 
 Here is a brief overview:
-```
-# yourprojectfolder/.vuepress/config.js
+```javascript
+// yourprojectfolder/.vuepress/config.js
 module.exports = {
   ...
   theme: 'terminal',
@@ -17,7 +17,7 @@ module.exports = {
 }
 ```
 
-```
+```yaml
 # yourprojectfolder/README.md
 
 ---
