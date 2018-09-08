@@ -3,6 +3,6 @@ module.exports = {
   theme: 'terminal',
   serviceWorker: true,
   title: 'Demo',
-  base: '/vuepress-theme-terminal'
+  base: '/vuepress-theme-terminal/'
 }
 
