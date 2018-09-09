@@ -8,8 +8,8 @@
 See the `demo/` folder for a working example!
 
 Here is a brief overview:
-```
-# yourprojectfolder/.vuepress/config.js
+```javascript
+// yourprojectfolder/.vuepress/config.js
 module.exports = {
   ...
   theme: 'terminal',
@@ -17,7 +17,7 @@ module.exports = {
 }
 ```
 
-```
+```yaml
 # yourprojectfolder/README.md
 
 ---
