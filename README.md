@@ -1,8 +1,8 @@
 # vuepress-theme-terminal
 > A terminal theme for VuePress!
 
-[Demo](https://jacsmith21.github.io/vuepress-theme-terminal)
-[My Portfolio](https://jacsmith21.github.io)
+[Demo](https://jsmith.github.io/vuepress-theme-terminal)
+[My Portfolio](https://jsmith.github.io)
 
 ## Usage
 See the `demo/` folder for a working example!
@@ -33,7 +33,7 @@ socials:
       link: john@john.ca
 projects:
     -   title: vue-terminal
-        link: github.com/jacsmith21/prompt
+        link: github.com/jsmith/prompt
         description: >
             `vue-terminal` is the Vue component library I made to power this website. It tries
             its best to mimic a regular zsh shell (tab completion, simple commands, etc.).

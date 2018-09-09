@@ -4,7 +4,7 @@
     <i class="info-button fas fa-info-circle" @click="open = true"></i>
     <model v-model="open">
       <i class="fas fa-code icon-text"></i> by
-      <a class="link" href="https://github.com/jacsmith21" target="_blank"> @jacsmith21</a>
+      <a class="link" href="https://github.com/jsmith" target="_blank"> @jsmith</a>
     </model>
   </div>
 </template>
