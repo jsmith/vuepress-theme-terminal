@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-terminal",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "private": false,
   "scripts": {
     "lint": "vue-cli-service lint",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^2.5.17",
-    "@jsmith21/vue-terminal": "^0.2"
+    "@jsmith21/vue-terminal": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0",
