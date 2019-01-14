@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-terminal",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "private": false,
   "scripts": {
     "lint": "vue-cli-service lint",
@@ -23,6 +23,6 @@
     "vue-cli-plugin-vuepress": "^0.1.0",
     "vue-template-compiler": "^2.5.17",
     "vuepress": "^0.14.2",
-    "vuepress-theme-terminal": "^1.0.1"
+    "vuepress-theme-terminal": "^1.1.0"
   }
 }
