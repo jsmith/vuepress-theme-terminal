@@ -10,58 +10,62 @@
 </template>
 
 <script>
-  import Vue from 'vue'
-  import Model from './Modal'
+import Vue from 'vue'
+import Model from './Modal'
 
-  // noinspection JSUnusedGlobalSymbols
-  export default {
-    name: 'Layout',
-    data: () => ({open: false}),
-    components: { Model },
-    computed: {
-      data () {
-        return this.$page.frontmatter
-      },
-      fs () {
-        return {
-          home: {
-            [this.data.user]: {
-              projects: this.projects,
-              '.bashrc': 'cd ~\nalias ll="ls -l"',
-              'About.txt': this.data.about,
-              'Socials.txt': this.socials
-            }
+export default {
+  name: 'Layout',
+  data: () => ({ open: false }),
+  components: { Model },
+  computed: {
+    data () {
+      return this.$page.frontmatter
+    },
+    fs () {
+      return {
+        home: {
+          [this.data.user]: {
+            projects: this.projects,
+            '.bashrc': 'cd ~\nalias ll="ls -l"',
+            'About.txt': this.data.about,
+            'Socials.txt': this.socials
           }
         }
-      },
-      projects () {
-        let p = {}
-        this.data.projects.map(project => {
-          p[`${project.title}.txt`] = `Title: ${project.title}\nLink: ${project.link}\nDescription: ${project.description}`
-        })
-        return p
-      },
-      config () {
-        return {
-          user: this.data.user,
-          welcome: this.data.welcome,
-          fileSystem: this.fs
-        }
-      },
-      socials () {
-        return this.data.socials.map(social =>  `${social.title} -> ${social.link}`).join('\n')
       }
     },
-    mounted () {
-      // eslint-disable-next-line
-      import('@jsmith21/vue-terminal').then(Terminal => {
-        const Component = Vue.extend({
-          render: (h) => h(Terminal.default, { props: this.config, class: 'terminal--component' })
-        })
-        new Component().$mount('#terminal-mount')
+    projects () {
+      let projects = {}
+      this.data.projects.map(project => {
+        projects[`${project.title}.txt`] = `
+          Title: ${project.title}\nLink: ${project.link}\nDescription: ${project.description}
+        `.trim()
       })
+      return projects
+    },
+    config () {
+      return {
+        user: this.data.user,
+        welcome: this.data.welcome,
+        fileSystem: this.fs
+      }
+    },
+    socials () {
+      return this.data.socials.map(social => `${social.title} -> ${social.link}`).join('\n')
     }
+  },
+  mounted () {
+    // We have to import vue-terminal here because it tries to access
+    // global variables (`window` I think).
+    // This causes an issue with vue-press during compilation
+    // eslint-disable-next-line
+    import('@jsmith21/vue-terminal').then(Terminal => {
+      const Component = Vue.extend({
+        render: (h) => h(Terminal.default, { props: this.config, class: 'terminal--component' })
+      })
+      new Component().$mount('#terminal-mount')
+    })
   }
+}
 </script>
 
 <style scoped lang="stylus">

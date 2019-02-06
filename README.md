@@ -48,6 +48,8 @@ projects:
 ---
 ```
 
+> Beware of using project names with spaces as this is not currently supported.
+
 ## Missing a feature?
 This project was developed for my personal portfolio. As such, I only implemented the features I needed. If there is a new feature you'd like to see implemented, create a issue or put up a PR (contributions are very welcome).
 
