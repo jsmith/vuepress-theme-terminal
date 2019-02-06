@@ -59,5 +59,5 @@ npm i
 
 then run the development server!
 ```
-npm run serve  # run hot reload
+npm run dev  # run hot reload
 ```
