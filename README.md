@@ -6,8 +6,7 @@
 > WARNING: This package may be broken at the moment due to weird WebPack issues I've encountered when upgrading packages. I will try to fix when I have more motivation.
 
 ## Demos
-[Basic Demo](https://jsmith.github.io/vuepress-theme-terminal)  
-[My Portfolio](https://jsmith.github.io)
+[Basic Demo](https://jsmith.github.io/vuepress-theme-terminal)
 
 ## Usage
 This theme is best used for a portfolio site.
