@@ -59,7 +59,22 @@ Install the dependencies:
 npm i
 ```
 
+Symlink this folder to node_modules
+```
+n -s $(pwd) $(pwd)/node_modules/vuepress-theme-terminal so that vuepress can find out the files :)
+```
+
 then run the development server!
 ```
 npm run dev  # run hot reload
+```
+
+### Publishing
+```
+VERSION="YOUR_VERSION"
+git add .
+git commit -m "$VERSION"
+git tag v$VERSION
+git push
+npm publish
 ```

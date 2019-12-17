@@ -1,6 +1,8 @@
 <template>
   <div class="terminal__container">
-    <div id="terminal-mount"></div>
+    <div style="display: flex; justify-content: center">
+      <div id="terminal-mount"></div>
+    </div>
     <i class="info-button fas fa-info-circle" @click="open = true"></i>
     <model v-model="open">
       <i class="fas fa-code icon-text"></i> by
@@ -10,8 +12,8 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import Model from './Modal'
+import Vue from 'vue';
+import Model from './Modal';
 
 export default {
   name: 'Layout',
@@ -58,9 +60,12 @@ export default {
     // global variables (`window` I think).
     // This causes an issue with vue-press during compilation
     // eslint-disable-next-line
-    import('@jsmith21/vue-terminal').then(Terminal => {
+    import('@jsmith21/vue-terminal').then(({ default: plugin }) => {
+      console.log(plugin)
+      Vue.use(plugin);
+      const Terminal = plugin.Terminal;
       const Component = Vue.extend({
-        render: (h) => h(Terminal.default, { props: this.config, class: 'terminal--component' })
+        render: (h) => h(Terminal, { props: this.config, class: 'terminal--component' })
       })
       new Component().$mount('#terminal-mount')
     })
@@ -69,12 +74,13 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css')
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css') 
 
 .terminal__container
   display flex
+  flex-direction: column
   justify-content center
-  align-items: center
+  align-items: stretch
   position absolute
   left 0
   top 0
@@ -83,7 +89,9 @@ export default {
 
   >>> .terminal--component
     box-shadow 6px 6px 36px 4px rgba(0,0,0,0.38)
-    padding 0
+    max-width: 800px
+    padding: 0
+    margin: 0 15px
 
   .info-button
     position absolute
