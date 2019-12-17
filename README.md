@@ -49,6 +49,8 @@ projects:
 ---
 ```
 
+Want to see something a bit more complex? See my [portfolio configuration](https://raw.githubusercontent.com/jsmith/portfolio/5ce6445fb6036cfdfa4efd1c0ffeb3adab4b869e/jsmith.github.io/README.md).
+
 > Beware of using project names with spaces as this is not currently supported.
 
 ## Missing a feature?
