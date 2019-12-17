@@ -3,7 +3,7 @@
 
 > A terminal (portfolio) theme for VuePress!
 
-> WARNING: This package may be broken at the moment due to weird WebPack issues I've encountered when upgrading packages. I will try to fix when I have more motivation.
+> WARNING: This package does NOT work with Firefox due to incompatible Regex :(
 
 ## Demos
 [Basic Demo](https://jsmith.github.io/vuepress-theme-terminal)
