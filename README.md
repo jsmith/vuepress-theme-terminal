@@ -1,4 +1,4 @@
-s# vuepress-theme-terminal
+# vuepress-theme-terminal
 <img src="https://i.ibb.co/gJc6psR/image.png" alt="image" border="0">
 
 > A terminal (portfolio) theme for VuePress!
