@@ -72,7 +72,7 @@ npm run dev  # run hot reload
 
 ### Publishing
 ```
-VERSION="YOUR_VERSION"
+VERSION=YOUR_VERSION
 git add .
 git commit -m "$VERSION"
 git tag v$VERSION
