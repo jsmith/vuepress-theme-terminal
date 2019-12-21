@@ -3,7 +3,7 @@
 
 > A terminal (portfolio) theme for VuePress!
 
-> WARNING: This package may be broken at the moment due to weird WebPack issues I've encountered when upgrading packages. I will try to fix when I have more motivation.
+> WARNING: This package does NOT work with Firefox due to an incompatible Regex :(
 
 ## Demos
 [Basic Demo](https://jsmith.github.io/vuepress-theme-terminal)
@@ -49,6 +49,8 @@ projects:
 ---
 ```
 
+Want to see something a bit more complex? See my [portfolio configuration](https://raw.githubusercontent.com/jsmith/portfolio/5ce6445fb6036cfdfa4efd1c0ffeb3adab4b869e/jsmith.github.io/README.md).
+
 > Beware of using project names with spaces as this is not currently supported.
 
 ## Missing a feature?
@@ -60,9 +62,9 @@ Install the dependencies:
 npm i
 ```
 
-Symlink this folder to node_modules
+Symlink this folder to node_modules so that vuepress can find the files :)
 ```
-n -s $(pwd) $(pwd)/node_modules/vuepress-theme-terminal so that vuepress can find out the files :)
+n -s $(pwd) $(pwd)/node_modules/vuepress-theme-terminal
 ```
 
 then run the development server!
