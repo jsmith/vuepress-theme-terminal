@@ -1,7 +1,7 @@
 # vuepress-theme-terminal
 <img src="https://i.ibb.co/gJc6psR/image.png" alt="image" border="0">
 
-> A terminal (portfolio) theme for VuePress!
+> A terminal (portfolio) theme for VuePress based on [vue-terminal](https://github.com/jsmith/vue-terminal)!
 
 > WARNING: This package does NOT work with Firefox due to an incompatible Regex :(
 
