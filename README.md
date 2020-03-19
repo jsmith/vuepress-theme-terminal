@@ -64,7 +64,7 @@ npm i
 
 Symlink this folder to node_modules so that vuepress can find the files :)
 ```
-n -s $(pwd) $(pwd)/node_modules/vuepress-theme-terminal
+ln -s $(pwd) $(pwd)/node_modules/vuepress-theme-terminal
 ```
 
 then run the development server!
