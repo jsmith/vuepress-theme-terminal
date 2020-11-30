@@ -57,7 +57,7 @@ Want to see something a bit more complex? See my [portfolio configuration](https
 This project was developed for my personal portfolio. As such, I only implemented the features I needed. If there is a new feature you'd like to see implemented, create a issue or put up a PR (contributions are very welcome).
 
 ## Development
-Install the dependencies:
+Want to work on this library? Install the dependencies:
 ```
 npm i
 ```
