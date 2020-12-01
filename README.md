@@ -8,6 +8,11 @@
 ## Demos
 [Basic Demo](https://jsmith.github.io/vuepress-theme-terminal)
 
+## Installatino
+```
+npm install vuepress-theme-terminal
+```
+
 ## Usage
 This theme is best used for a portfolio site.
 
