@@ -3,12 +3,10 @@
 
 > A terminal (portfolio) theme for VuePress based on [vue-terminal](https://github.com/jsmith/vue-terminal)!
 
-> WARNING: This package does NOT work with Firefox due to an incompatible Regex :(
-
 ## Demos
 [Basic Demo](https://jsmith.github.io/vuepress-theme-terminal)
 
-## Installatino
+## Installation
 ```
 npm install vuepress-theme-terminal
 ```
